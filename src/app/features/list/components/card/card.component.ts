@@ -1,7 +1,8 @@
-import { Component, input } from '@angular/core';
+import { Component, EventEmitter, Output, input, output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { Product } from '../../../../shared/interfaces/products.interface';
+
 
 @Component({
   selector: 'app-card',
@@ -15,4 +16,6 @@ import { Product } from '../../../../shared/interfaces/products.interface';
 })
 export class CardComponent {
   product = input.required<Product>()
+
+  @Output() edit = new EventEmitter();
 }
