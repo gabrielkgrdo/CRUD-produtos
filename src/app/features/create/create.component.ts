@@ -45,9 +45,6 @@ export class CreateComponent {
       })
       .subscribe(() => {
         this.snackBar.open('Produto criado com sucesso!', 'OK', {
-          duration: 3000,
-          horizontalPosition: 'center',
-          verticalPosition: 'bottom',
         });
         this.router.navigateByUrl('/');
       });
