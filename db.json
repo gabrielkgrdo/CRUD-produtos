@@ -1,20 +1,12 @@
 {
   "products": [
     {
-      "title": "Produto de teste editado 3",
-      "id": "1"
-    },
-    {
       "id": "b977",
       "title": "Sapato"
     },
     {
       "id": "6a27",
       "title": "Camiseta"
-    },
-    {
-      "id": "c594",
-      "title": "Bolsa"
     }
   ]
 }
