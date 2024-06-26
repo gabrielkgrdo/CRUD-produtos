@@ -9,16 +9,16 @@
       "id": "cf25"
     },
     {
-      "id": "bbaf",
-      "title": ""
+      "title": "teste 3",
+      "id": "bbaf"
     },
     {
-      "id": "c476",
-      "title": ""
+      "title": "teste 4",
+      "id": "c476"
     },
     {
-      "id": "87ae",
-      "title": ""
+      "title": "teste 5",
+      "id": "87ae"
     },
     {
       "id": "f848",
@@ -35,6 +35,10 @@
     {
       "id": "c594",
       "title": "Bolsa"
+    },
+    {
+      "id": "7136",
+      "title": "teste new product"
     }
   ]
 }
