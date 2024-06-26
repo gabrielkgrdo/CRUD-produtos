@@ -1,28 +1,8 @@
 {
   "products": [
     {
-      "title": "Produto de teste editado",
+      "title": "Produto de teste editado 3",
       "id": "1"
-    },
-    {
-      "title": "teste 2",
-      "id": "cf25"
-    },
-    {
-      "title": "teste 3",
-      "id": "bbaf"
-    },
-    {
-      "title": "teste 4",
-      "id": "c476"
-    },
-    {
-      "title": "teste 5",
-      "id": "87ae"
-    },
-    {
-      "id": "f848",
-      "title": "kleyber"
     },
     {
       "id": "b977",
@@ -35,10 +15,6 @@
     {
       "id": "c594",
       "title": "Bolsa"
-    },
-    {
-      "id": "7136",
-      "title": "teste new product"
     }
   ]
 }
