@@ -1,12 +1,12 @@
 {
   "products": [
     {
-      "id": "1",
-      "title": "Produto de teste"
+      "title": "Produto de teste editado",
+      "id": "1"
     },
     {
-      "id": "cf25",
-      "title": ""
+      "title": "teste 2",
+      "id": "cf25"
     },
     {
       "id": "bbaf",
