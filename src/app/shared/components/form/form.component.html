@@ -5,6 +5,7 @@
       <input type="text" matInput formControlName="title" placeholder="Título">
     </mat-form-field>
 
-    <button mat-raised-button color="accent" type="submit">Salvar</button>
+    <button mat-raised-button class="button-padding" color="accent" type="submit">Salvar</button>
+    <button mat-raised-button (click)="voltar()" color="primary" type="button">Voltar</button>
   </div>
 </form>

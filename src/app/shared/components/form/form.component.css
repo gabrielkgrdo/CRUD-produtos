@@ -6,7 +6,10 @@
 
 .form-content-container{
   width: 100%;
-  max-width: 450px;
   display: flex;
   flex-direction: column;
+}
+
+.button-padding {
+  margin-bottom: 10px;
 }

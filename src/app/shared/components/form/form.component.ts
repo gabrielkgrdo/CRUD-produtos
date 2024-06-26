@@ -1,10 +1,11 @@
-import { Component, EventEmitter, Output, input } from '@angular/core';
+import { Component, EventEmitter, Output, inject, input } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
 import { Product } from '../../interfaces/products.interface';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form',
@@ -22,6 +23,8 @@ import { MatSelectModule } from '@angular/material/select';
 export class FormComponent {
   product = input<Product | null>(null);
 
+  route = inject(Router)
+
   form!: FormGroup;
 
   @Output() done = new EventEmitter<Product>()
@@ -38,5 +41,9 @@ export class FormComponent {
   onSubmit() {
     const product = this.form.value as Product
     this.done.emit(product)
+  }
+
+  voltar() {
+    this.route.navigate(['']);
   }
 }
