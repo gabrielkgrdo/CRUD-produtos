@@ -1,12 +1,16 @@
 {
   "products": [
     {
-      "id": "d5f9",
-      "title": "sapato"
+      "id": "d382",
+      "title": "Mochila"
     },
     {
-      "id": "08d7",
-      "title": "mochila"
+      "id": "08bd",
+      "title": "Sapato"
+    },
+    {
+      "id": "42d6",
+      "title": "Blusa"
     }
   ]
 }

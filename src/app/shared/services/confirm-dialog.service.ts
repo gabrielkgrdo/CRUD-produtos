@@ -1,4 +1,4 @@
-import { Component, Injectable, inject } from '@angular/core';
+import { Component, Injectable, inject, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import {
   MatDialogActions,
@@ -7,14 +7,16 @@ import {
   MatDialogContent,
   MatDialogRef,
   MatDialog,
+  MAT_DIALOG_DATA,
 } from '@angular/material/dialog';
 import { Observable } from 'rxjs';
 import { filter } from 'rxjs/operators';
+import { Product } from '../interfaces/products.interface';
 
 @Component({
   selector: 'app-confirmation-dialog',
   template: `
-    <h2 mat-dialog-title>Deletar Produto</h2>
+    <h2 mat-dialog-title>Deletar {{ product.title}}?</h2>
     <mat-dialog-content>
       Tem certeza que deseja deletar esse produto?
     </mat-dialog-content>
@@ -34,6 +36,8 @@ import { filter } from 'rxjs/operators';
 })
 export class ConfirmationDialogComponent {
   matDialogRef = inject(MatDialogRef);
+  data = inject(MAT_DIALOG_DATA);
+  product: Product = this.data.product;
 
   onYes() {
     this.matDialogRef.close(true);
@@ -50,9 +54,12 @@ export class ConfirmationDialogComponent {
 export class ConfirmDialogService {
   matDialog = inject(MatDialog);
 
+
   constructor() {}
 
-  openDialog(): Observable<boolean>{
-    return this.matDialog.open(ConfirmationDialogComponent).afterClosed();
+  openDialog(product: Product): Observable<boolean>{
+    return this.matDialog.open(ConfirmationDialogComponent, {
+      data: { product }
+    }).afterClosed();
   }
 }
